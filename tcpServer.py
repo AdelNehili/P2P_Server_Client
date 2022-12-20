@@ -26,17 +26,23 @@ class ClientThread(threading.Thread):
         print("Thread : New client connected:", self.client_address)
 
         other_server_socket = self.connect_to_other_server()
-
+        #print("Here it is my relay :", other_server_socket.getsockname()[1])
+        #print("Here it is my Client :", self.client_socket)
+        
         while self.running:
             data = self.client_socket.recv(1024)
             if not data:
               print("Voila la data recu : ", data.decode())
               break
+
             else:
-              print(data.decode())
+              print("Client : ",data.decode())
+              
+              if other_server_socket.getsockname()[1] != 0:
+                other_server_socket.send(data)
+                data = other_server_socket.recv(1024)
+                print(f'Received data: {data.decode()}')
               self.client_socket.send(data)
-              #server_socket.send(data) 
-              #response = other_server_socket.recv(1024)
 
         self.client_socket.close()
         print("Client disconnected:", self.client_address)
