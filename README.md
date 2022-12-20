@@ -10,7 +10,7 @@ GITHUB
 Command lines: <br />
 To clone/download: <br />
 &emsp;	git clone -b branch_name git_link <br />
-&emsp;	//git clone -b Part2_Adel https://github.com/AdelNehili/P2P_Server_Client.git <br />
+&emsp;	//git clone -b other_branch https://github.com/AdelNehili/P2P_Server_Client.git <br />
 
 
 To update FROM github:<br />
@@ -20,7 +20,7 @@ To update FROM github:<br />
 
 To update GITHUB: <br />
 &emsp;	git init <br />
-&emsp;	git add * <br />
+&emsp;	git add -A <br />
 &emsp;	git commit -m <br />
 &emsp;	git push <br />
 
