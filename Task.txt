@@ -9,8 +9,9 @@ Comportement des Server/Client:
     
 
 A faire:
+    -Créer deux threads chez tcpClient afin de pouvoir recevoir et envoyer de l'info sans attendre
     -Vérifier que le client ne se connecte pas 2 fois à la même adresse
     -Gérer le cas où un server veut se connecter à plusieurs server? 
         Dans un premier temps, on peut juste choisir de manière random un autre server
-    -Faire en sorte de choisir aléatoirement le relay
+    -Faire en sorte de choisir aléatoirement le relait
     -Gestion du cas ou un tcpServer n'a personne à qui envoyer/écouter la data

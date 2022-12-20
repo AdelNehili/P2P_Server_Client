@@ -7,12 +7,13 @@ def is_there_same_port(current_port, port_list):
             return True
     return False
 
-def check_run_code(my_list):
-    if (len(my_list)<=1):
-        print("Veuillez introduire le port de ce server")
+def check_run_code(my_list,min_len=1):
+    if (len(my_list)<=min_len):
+        print("Veuillez introduire le port de ce server ou introduire le bon nombre d'adresse")
         exit()
     if (not my_list[1].isdigit()):
         print("Veuillez introduire le port de ce server sous format nombre")
         exit()
     if(is_there_same_port(my_list[1],my_list[2:])):
         exit()
+
