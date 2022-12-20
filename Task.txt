@@ -1,0 +1,16 @@
+Mission accomplies:
+    -Création du system server dont le port est donné en input
+    -Création du client dont le port est donné en input
+    -Création d'un bash lisant les adresses dans un fichier public et lancant toutes les connections
+
+Comportement des Server/Client:
+    -Ils sont capable de s'envoyer des informations en mode TCP
+    -Ils gèrent le SIGINT afin de relacher proprement leur port/socket
+    
+
+A faire:
+    -Vérifier que le client ne se connecte pas 2 fois à la même adresse
+    -Gérer le cas où un server veut se connecter à plusieurs server? 
+        Dans un premier temps, on peut juste choisir de manière random un autre server
+    -Faire en sorte de choisir aléatoirement le relay
+    -Gestion du cas ou un tcpServer n'a personne à qui envoyer/écouter la data
