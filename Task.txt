@@ -2,9 +2,8 @@ Mission accomplies:
     -Création du system server dont le port est donné en input
     -Création du client dont le port est donné en input
     -Création d'un bash lisant les adresses dans un fichier public et lancant toutes les connections
-    -S'assurer que le Server a un relait à qui envoyer des données : other_server_socket.getsockname() != 0
-
-    
+    -Les servers sont capables de lire le message qu'envoie le client afin de connaitre le prochain relait!!!!
+    -Implémentation du cas où il n'y a plus de prochain relait => ON EST ARRIVE AU BOUT DU CHEMIN
 Comportement des Server/Client:
     -Ils sont capable de s'envoyer des informations en mode TCP
     -Ils gèrent le SIGINT afin de relacher proprement leur port/socket

@@ -10,11 +10,7 @@ Useful command lines for the project:<br />
 &emsp;	ps -T -p PID : permet d'afficher tous les sub-process en cours avec du process correspondant au PID<br />
 
 &emsp; kill -s SIGINT -P $(pidof code)<br />
-=======
-VS CODE
-=======
-&emsp; crtl-k ctrl-à : Allow to collapse all functions<br />
-&emsp;	crtl-k ctrl-j : Allows to unfold all functions<br />
+
 
 =======
 GITHUB
