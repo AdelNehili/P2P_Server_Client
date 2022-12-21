@@ -25,8 +25,9 @@ if __name__ == "__main__":
 
     print('Client : Connected to server %d'%(port_to_use))
     while True:
+        hops = 0
         buffer_to_send = input()
-        buffer_to_send = end_point_port+"/"+buffer_to_send
+        buffer_to_send = end_point_port+"/"+str(hops)+"/"+buffer_to_send
         client_socket.send(buffer_to_send.encode())
         
         data = client_socket.recv(1024)
